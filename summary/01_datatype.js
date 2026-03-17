@@ -46,3 +46,26 @@ const myFunc = function () {
 myFunc()
 
 console.log(typeof heroes); // function is a type of object in js
+
+
+// ******************** Memory ********************
+
+// 2 types of memory: stack (in primitive datatype) and heap (non primitive datatype)
+
+let myName = "chirag"
+let anotherNamme = myName
+anotherNamme = "bansal"
+
+console.log(anotherNamme);    // example of stack memory
+// changing anotherNamme does not change myName because they are stored in different memory locations
+
+let userOne = {
+    email : 'user@google.com',
+    age : '20'
+}
+
+let userTwo = userOne
+// here changing userTwo will change userOne as stored in same memory i.e is heap memory
+
+userTwo.email = "chirag@google.com"
+console.log(userOne.email);
