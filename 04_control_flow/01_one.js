@@ -1,3 +1,5 @@
+// we dont want whole code to run so we put conditions
+
 // if
 
 const isUserLoggedIn = true
