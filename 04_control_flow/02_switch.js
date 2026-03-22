@@ -15,3 +15,6 @@ switch(month) {
     default:
         console.log('naccho bc');
 }
+
+// just to remember something like this exist 
+// a short file
