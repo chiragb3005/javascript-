@@ -15,3 +15,11 @@
 }) ('chirag');
 // treat it like function only
 // arror function is also function
+
+
+
+
+
+
+
+// yayyyyy basics over // 
