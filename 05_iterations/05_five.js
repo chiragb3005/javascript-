@@ -10,7 +10,7 @@ coding.forEach( (item) => {
 } )
 
 function printMe(item){
-    // console.log(item)
+    console.log(item)
 }
 coding.forEach(printMe)
 // Dont call function only give the refrence 
@@ -35,5 +35,5 @@ const myCoding = [
 ]
 
 myCoding.forEach( (item) => {
-    console.log(item)
+    console.log(item.languageName)
 } )
