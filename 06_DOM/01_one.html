@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+        .bg-color{
+            background-color: #414141;
+            color: white
+        }
+    </style>
+</head>
+<body class = "bg-color">
+    <div>
+    <h1 id = "title" class="heading">DOM Learning by YouTube test <span style="display: none;">test text </span></h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <label for="password">Enter password</label>
+    <input type="password" name="LogIn Password" id="">
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    </div>
+</body>
+</html>
+
+<!-- The Document Object Model (DOM) is a structured way for web browsers to represent and interact with HTML pages, treating every part of a page (like tags, text, and attributes) as objects.(It's how JavaScript “talks” to HTML.)
+The DOM is explained as a model that represents the structure of an HTML document as a tree of objects (head, body, p, img ). Every element, attribute, and text is considered a "node" in this tree
+
+    Example HTML:
+    <html>
+    <body>
+        <h1>Hello</h1>
+        <p>Paragraph</p>
+    </body>
+    </html>
+
+    Corresponding DOM Tree:
+
+    Document
+    └── html
+        └── body
+            ├── h1
+            │    └── "Hello"
+            └── p
+                └── "Paragraph"
+
+# Window and Document :-
+-The browser creates a window object that represents the browser tab or window.
+-window contains many properties and methods — one of them is document.
+-The document object represents the webpage and provides access to:
+    HTML elements.
+    Document structure.
+    Methods for DOM manipulation.
+
+    console.log(window.document); // Outputs the entire HTML document and methods for manipulation
+    console.log(document); //outputs entire document
+    console.dir(windows); //Outputs the entire HTML document and methods for manipulation
+
+
+!! Collections like HTMLCollection or NodeList are used to handle groups of elements, but they differ from standard arrays. -->
