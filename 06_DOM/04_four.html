@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Shit Again</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // not an optimistic way to add 
+    // the func will add at last for which the DOM have to travel to all the tress 
+    // in big project not a good idea to do it
+    // use DSA here
+    // instead of innerHtml use appendChild
+    // appendChild() is designed to work with the DOM tree
+    // and DOM tree = made of nodes, not raw data
+    function addLang(langName) {
+        const li = document.createElement('li')
+        li.textContent = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang('python')
+    addLang('Ruby')
+
+    function addOptionalLang(langname) {
+        const li= document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        // injecting inside li first
+        document.querySelector('.language').appendChild(li)
+        // now injectiog li to the web page
+    }
+    addOptionalLang('Golang')
+
+    // EDIT
+    const value = document.querySelector('li:nth-child(2)')
+    const newli = document.createElement('li')
+    newli.appendChild(document.createTextNode('Mojo'))
+    value.replaceWith(newli)
+
+    // edit
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li> Typescript </li>'
+
+    // remove 
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html>
