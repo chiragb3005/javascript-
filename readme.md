@@ -11,8 +11,8 @@ During this phase, JS engine scans the code and assigns the initial values for t
 
 - Phase 3: Execution phase
 After the creation phase completed, the execution phase begins where actual values of the variables are set. And when the functions are called it creates a new 'Function Execution' context which consists of two phases (they works same as explained above but only for the particular function scope):
-> Memory phase 
-> Execution phase  
++ Memory phase 
++ Execution phase  
 📝 The return value of the 'Function Execution' context is passed to the Global Execution Context
 
 ---
