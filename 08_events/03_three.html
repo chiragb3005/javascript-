@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: white">
+    <h1>Chai aur Code</h1>
+    <button id="start">START</button>
+    <br><br>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    let heading = document.querySelector('h1')
+    // const changeText = function(){
+    //     heading.innerHTML = 'BEST JS SERIES'
+    // }
+    let timeOut
+    document.querySelector('#start').addEventListener('click', function(e){
+        timeOut = setTimeout(function(){
+        heading.innerHTML = 'BEST JS SERIES'
+    }, 2000)
+    })
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(timeOut)
+    })
+</script>
+</html>
