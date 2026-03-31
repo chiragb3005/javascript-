@@ -107,3 +107,5 @@ await fetch('https://api.github.com/users/chiragb3005')
     console.log(`followers count : ${profile}`)
 } )
 .catch( (error) => console.log(error) )
+
+// fetch makes an special queue to push in heap memory
