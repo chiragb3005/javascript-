@@ -1,15 +1,15 @@
 class User {
     constructor(email, password) {
-        this.email = email
-        this.password = password
+        this._email = email
+        this._password = password
     }
 
     get password() {
-        return `${this._password}chirag`
+        return `${this.__password}chirag`
     }
 
     set password(value) {
-        this._password = value
+        this.__password = value
     }
 }
 const chai = new User ('chirag@google.com', '123')
