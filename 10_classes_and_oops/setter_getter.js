@@ -1,16 +1,17 @@
 class User {
     constructor(email, password) {
-        this._email = email
-        this._password = password
+        this.email = email
+        this.password = password   // ✅ go through setter
     }
 
     get password() {
-        return `${this.__password}chirag`
+        return `${this._password}chirag`
     }
 
     set password(value) {
-        this.__password = value
+        this._password = value
     }
 }
-const chai = new User ('chirag@google.com', '123')
-console.log(chai.password)
+
+const chai = new User('chirag@google.com', '123')
+console.log(chai.password) // 123chirag
